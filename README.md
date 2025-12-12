@@ -1,6 +1,4 @@
-# cos5-cards
-
-
+# COS 25
 
 [Alsarayreh Omar Ibrahim Fares](https://cosdpp.github.io/cos25-cards/alsarayreh-omar-ibrahim-fares/)
 [Andikolovskaia Mariia](https://cosdpp.github.io/cos25-cards/andikolovskaia-mariia/)
