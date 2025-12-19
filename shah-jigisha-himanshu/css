@@ -1,4 +1,3 @@
-/* Minimal CSS for Jane Sha Profile - Using #F49C32 instead of #F2675F */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { font-family: sans-serif; line-height: 1.5; color: #333; background: white; }
