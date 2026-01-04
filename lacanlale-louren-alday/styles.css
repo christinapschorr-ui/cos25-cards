@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: ##D5DEE6;
+  color: #86ADCF;
   background: #ffffff;
 }
 
@@ -11,7 +11,7 @@ h1, h2, h3, p, ul {
 }
 
 .header {
-  background: ##D5DEE6;
+  background: #86ADCF;
   padding: 40px 0;
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -39,7 +39,7 @@ h1, h2, h3, p, ul {
 }
 
 .intro h1 {
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: #444;
 }
 
@@ -119,10 +119,6 @@ ul li {
 }
 
 .skills li {
-  display: inline-block;
-  background: #e3eaee;
   padding: 6px 12px;
-  border-radius: 20px;
-  margin: 5px 5px 5px 0;
   font-size: 14px;
 }
