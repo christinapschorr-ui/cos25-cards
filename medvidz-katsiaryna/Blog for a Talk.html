@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Post for a Talk — Jeremy Keith “Building”</title>
+  <style>
+    :root { --max: 980px; }
+
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      line-height:1.6;
+      color:#111;
+      background:#fff;
+    }
+
+    header{
+      padding:40px 20px 10px;
+      border-bottom:1px solid #e8e8e8;
+    }
+
+    .wrap{ max-width: var(--max); margin: 0 auto; }
+
+    h1{
+      margin:0 0 8px;
+      font-size: 42px;
+      letter-spacing: -0.02em;
+    }
+
+    .sub{
+      margin:0;
+      color:#444;
+      font-size: 16px;
+    }
+
+    .sub a{
+      color:#0b57d0;
+      text-decoration: none;
+    }
+
+    .sub a:hover{ text-decoration: underline; }
+
+    main{ padding: 28px 20px 60px; }
+
+    .layout{
+      display:grid;
+      grid-template-columns: 1fr 280px;
+      gap: 34px;
+      align-items:start;
+    }
+
+    @media (max-width: 860px){
+      .layout{ grid-template-columns: 1fr; }
+      aside{ position: static; }
+    }
+
+    article h2{
+      margin: 34px 0 10px;
+      font-size: 30px;
+      letter-spacing: -0.02em;
+    }
+
+    article p{ margin: 0 0 14px; }
+
+    aside{
+      border: 1px solid #ededed;
+      border-radius: 12px;
+      padding: 18px;
+      position: sticky;
+      top: 18px;
+      background: #fafafa;
+    }
+
+    aside h3{
+      margin: 0 0 14px;
+      font-size: 18px;
+    }
+
+    .meta{
+      font-size: 14px;
+      color:#333;
+    }
+
+    .meta a{
+      color:#0b57d0;
+      text-decoration:none;
+    }
+
+    .meta a:hover{ text-decoration: underline; }
+
+    footer{
+      border-top:1px solid #e8e8e8;
+      padding: 18px 20px;
+      color:#555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Blog Post for a Talk</h1>
+      <p class="sub">
+        Jeremy Keith — <em>Building</em> (Full Stack Europe 2019) ·
+        Watch on
+        <a href="https://youtu.be/TbDWdVJECt4" target="_blank" rel="noopener">YouTube</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="layout">
+      <article>
+        <h2>Getting to know the web</h2>
+        <p>
+          I went into Jeremy Keith’s talk expecting a typical update on tools and trends.
+          Instead, he frames web development as something closer to architecture: not just
+          assembling parts, but designing structures that should last, adapt, and remain
+          useful over time.
+        </p>
+        <p>
+          That shift in perspective matters. The web isn’t only a polished interface or a
+          bundle of JavaScript files—it’s an environment people depend on. Thinking like a
+          builder means caring about fundamentals, clarity, and long-term impact.
+        </p>
+
+        <h2>Exploring parallels</h2>
+        <p>
+          One of the strongest ideas in the talk is the parallel between physical buildings
+          and digital systems. In architecture, you plan for context, materials, maintenance,
+          and change. On the web, this translates into standards, semantics, accessibility,
+          and maintainability.
+        </p>
+        <p>
+          A site that cannot be understood or extended over time is like a temporary
+          structure—impressive at first glance, but fragile in practice.
+        </p>
+
+        <h2>The current state</h2>
+        <p>
+          The talk feels like a quiet critique of a culture that prioritizes speed over
+          durability. We optimize for shipping quickly, often forgetting that the web is a
+          living space shaped by many devices, users, and conditions.
+        </p>
+        <p>
+          Building for the web means accepting uncertainty and designing for it, starting
+          with strong foundations and adding complexity only when it truly serves a purpose.
+        </p>
+
+        <h2>Final thoughts</h2>
+        <p>
+          This talk left me with a simple but powerful mindset: treat web projects as real
+          structures. Make them understandable, resilient, and open to change. You’re not
+          just publishing a page—you’re building a place someone will enter.
+        </p>
+      </article>
+
+      <aside>
+        <h3>Talk details</h3>
+        <div class="meta">
+          <p><strong>Speaker:</strong> Jeremy Keith</p>
+          <p><strong>Talk:</strong> Building</p>
+          <p><strong>Event:</strong> Full Stack Europe 2019</p>
+          <p>
+            <strong>Video:</strong>
+            <a href="https://youtu.be/TbDWdVJECt4" target="_blank" rel="noopener">
+              Watch on YouTube
+            </a>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> · Blog post for a talk
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
